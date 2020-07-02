@@ -1,0 +1,26 @@
+Query like in mining, these choose what type of rock you want to work with, ps, hs, a, etc. Text contentn means to just add a text onto the rocks you choose.
+unless when you are selecting the thing you want to select, you have to make them =. 
+let myheading = document.querySelector('h1');
+myheading.textContent = 'hello world';
+OR
+another short way will be to just add all on one line
+document.querySelector("html").textContent = "Hello World"
+Remember to call the document to let them know. 
+
+here is an example of using the query selection with an onclick on the html
+document.querySelector('html').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
+
+Here we are using the attribute function, so things next to the main query ones. Also, setting a variable equal to the document.qure.... etc, is important since it will be
+referenced alot. 
+let myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    let mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/firefox-icon.png') {
+      myImage.setAttribute ('src','images/firefox2.png');
+    } else {
+      myImage.setAttribute ('src','images/firefox-icon.png');
+    }
+}
