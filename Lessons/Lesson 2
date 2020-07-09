@@ -24,3 +24,4 @@ if(!localStorage.getItem('name')) {
 }myButton.onclick = function() {
   setUserName();
 };
+We read the items off the list. Adding text to a page, using prompt. Attributes are within the code as src, class, id.
