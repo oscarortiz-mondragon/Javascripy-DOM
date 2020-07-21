@@ -12,3 +12,33 @@ content.classList.add('content');
 content.textContent = 'This is the glorious text-content!';
 
 container.appendChild(content);
+----------------Practice problem-----
+let container = document.querySelector("#container")
+let element = document.createElement("p")
+let heading = document.createElement("h3")
+
+
+element.textContent = "Hey,I'm Red"
+element.setAttribute("style","color: red;")
+container.appendChild(element);
+
+container.appendChild(heading);
+heading.setAttribute("style","color:blue;")
+heading.textContent = "I'm A blue H3!"
+// ----------------------------------------------
+You can only create elements by the document. 
+let newDiv = document.createElement("div")
+newDiv.setAttribute("style","border:solid 10px black; background:pink;")
+let p = document.createElement("p")
+p.textContent = "Me Too!"
+let h1 = document.createElement("h1")
+h1.textContent = "im In a Div!"
+newDiv.appendChild(h1)
+newDiv.appendChild(p)
+container.appendChild(newDiv)
+// <!-- a <p> with red text that says “Hey I’m red!”
+//     an <h3> with blue text that says “I’m a blue h3!”
+//     a <div> with a black border and pink background color with the following elements inside of it:
+//     another <h1> that says “I’m in a div”
+//     a <p> that says “ME TOO!”
+//     Hint for this one: after creating the div with createElement, append the <h1> and <p> to it before adding it to the container. -->
