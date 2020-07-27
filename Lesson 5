@@ -1,0 +1,3 @@
+Good way to clear a previous created DIV, is to first get the container. 
+then conainter.innerHTML = ""
+Makes sure nothnig is added. 
