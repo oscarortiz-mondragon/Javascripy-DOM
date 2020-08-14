@@ -1,0 +1,3 @@
+How to Use Input value when button click.
+Call a function for the submit
+the function will be let input = document.(getInputByAnyMeans).value;
